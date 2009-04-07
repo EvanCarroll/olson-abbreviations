@@ -1,0 +1,7 @@
+.*\.swp$
+\.git
+Makefile$
+Makefile\.old
+MANIFEST\.bak
+\.tar\.gz
+blib/
