@@ -9,7 +9,9 @@ requires 'Moose';
 requires 'MooseX::AttributeHelpers';
 requires 'MooseX::ClassAttribute';
 
-build_requires 'Test::More';
+test_requires 'Test::More';
+
+repository 'git://github.com/EvanCarroll/olson-abbreviations.git';
 
 auto_install;
 
