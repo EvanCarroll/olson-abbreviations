@@ -23,4 +23,5 @@ requires:
   MooseX::ClassAttribute: 0
 resources:
   license: http://dev.perl.org/licenses/
+  repository: git://github.com/EvanCarroll/olson-abbreviations.git
 version: 0.01
