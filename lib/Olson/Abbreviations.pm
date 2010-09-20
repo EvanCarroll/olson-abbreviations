@@ -165,10 +165,6 @@ __END__
 
 Olson::Abbreviations -globally unique timezones abbreviation handling
 
-=head1 VERSION
-
-Version 0.01
-
 =head1 DESCRIPTION
 
 This module should help you with converting commonly used and often ambigious olson
@@ -177,8 +173,9 @@ abbreviations into TZ offset notation.
 =head2 NOT COMPLETE
 
 This module is released as 0.01 because it is useful. It is not complete. In order to
-be complete in the Author's eyes this module must accept a locale and disambiguate based
+be complete in the author's eyes this module must accept a locale and disambiguate based
 on that.
+
 EST is not ambigious if your standing in the US or in Austrailia. This module should
 handle this properly in the future.
 
@@ -251,7 +248,7 @@ L<http://search.cpan.org/dist/Olson-Abbreviations/>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2009 Evan Carroll, all rights reserved.
+Copyright 2010 Evan Carroll, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
