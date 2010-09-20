@@ -1,5 +1,10 @@
 Revision history for Olson-Abbreviations
 
+0.02    2010-09-20
+        uses namespace clean
+        removes requirement for MX:AH
+        specifies version of ClassAttribute required
+
 0.01    Date/time
         First version, released on an unsuspecting world.
 

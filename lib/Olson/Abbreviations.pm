@@ -4,14 +4,19 @@ use warnings;
 use strict;
 
 use MooseX::ClassAttribute;
-use MooseX::AttributeHelpers;
-our $VERSION = '0.01';
+use namespace::autoclean;
+
+our $VERSION = '0.02';
 
 class_has 'ZONEMAP' => (
-	isa  => 'HashRef[Maybe[Str]]'
+	isa  => 'HashRef[Str]'
 	, is => 'rw'
-	, metaclass => 'Collection::Hash'
-	, provides => { exists => 'is_known', get => '_get' }
+	, traits  => ['Hash']
+	, handles => {
+		'_exists' => 'exists'
+		, '_get' => 'get'
+		, '_defined' => 'defined'
+	}
 	, default => sub {
 		# Table for mapping abbreviated timezone names to tz_abbreviations
 		return {
@@ -124,9 +129,14 @@ class_has 'ZONEMAP' => (
 
 has 'tz_abbreviation' => ( isa => 'Str', is => 'rw', required => 1 );
 
+sub is_known {
+	my $self = shift;
+	$self->_exists( $self->tz_abbreviation );
+}
+
 sub is_unambigious {
 	my $self = shift;
-	defined $self->_get->( $self->tz_abbreviation );
+	$self->_defined( $self->tz_abbreviation );
 }
 
 sub get_offset {
@@ -144,6 +154,8 @@ sub get_offset {
 
 	$self->_get( $self->tz_abbreviation );
 }
+
+__PACKAGE__->meta->make_immutable;
 
 1;
 
