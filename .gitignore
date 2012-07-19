@@ -1,4 +1,6 @@
 inc/
+MANIFEST.bak
+MYMETA.*
 Makefile
 META.yml
 MANIFEST

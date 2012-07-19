@@ -1,4 +1,5 @@
 .*\.swp$
+dev/
 \.git
 Makefile$
 Makefile\.old
