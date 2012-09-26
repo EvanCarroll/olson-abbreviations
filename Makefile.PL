@@ -13,7 +13,6 @@ test_requires 'Test::More';
 
 repository 'git://github.com/EvanCarroll/olson-abbreviations.git';
 
-extra_tests;
 auto_install;
 
 WriteAll;

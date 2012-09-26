@@ -1,8 +1,5 @@
 Revision history for Olson-Abbreviations
 
-0.04    2012-09-26
-        Moved to use extratests in M::I, moved pod to extratests [RsrchBoy]
-
 0.03    2012-07-19
         upgraded to require the latest MX::ClassAttribute
 
