@@ -6,7 +6,7 @@ use strict;
 use MooseX::ClassAttribute;
 use namespace::autoclean;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 class_has 'ZONEMAP' => (
 	isa  => 'HashRef[Maybe[Str]]'
