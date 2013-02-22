@@ -1,12 +1,13 @@
 package Olson::Abbreviations;
-use Moose;
-use warnings;
 use strict;
+use warnings;
+
+use Moose;
 
 use MooseX::ClassAttribute;
 use namespace::autoclean;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 class_has 'ZONEMAP' => (
 	isa  => 'HashRef[Maybe[Str]]'
@@ -197,6 +198,10 @@ Perhaps a little code snippet.
 
 =over 12
 
+=item get_offset
+
+Returns the offset to UTC
+
 =item is_unambigious
 
 Returns 0|1 based on if the abbreviation is globally unambigious to the whole planet
@@ -248,7 +253,7 @@ L<http://search.cpan.org/dist/Olson-Abbreviations/>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2010 Evan Carroll, all rights reserved.
+Copyright 2012 Evan Carroll, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
