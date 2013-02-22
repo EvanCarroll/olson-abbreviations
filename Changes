@@ -1,5 +1,8 @@
 Revision history for Olson-Abbreviations
 
+0.04    2013-02-22
+        Fixed stupid fucking doc tests
+
 0.03    2012-07-19
         upgraded to require the latest MX::ClassAttribute
 
