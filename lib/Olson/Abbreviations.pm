@@ -4,7 +4,7 @@ use warnings;
 
 use Moose;
 
-use MooseX::ClassAttribute;
+use MooseX::ClassAttribute 0.27;
 use namespace::autoclean;
 
 our $VERSION = '0.04';
