@@ -164,7 +164,7 @@ __END__
 
 =head1 NAME
 
-Olson::Abbreviations -globally unique timezones abbreviation handling
+Olson::Abbreviations - globally unique timezones abbreviation handling
 
 =head1 DESCRIPTION
 
